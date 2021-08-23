@@ -12,11 +12,11 @@ function App() {
   return (
     <div className="App container-fluid">
       <div className="row">
-        <div className="list col-3 list-group-item-dark overflow-scroll">
+        <div className="list col-3  overflow-scroll">
           <MissionContainer handleIdChange={handleIdChange} />
         </div>
-        <div className="col-9">
-          <MissionInfo id={id} />
+        <div className="list-info col-9 overflow-scroll">
+          <MissionInfo  id={id} />
         </div>
       </div>
     </div>

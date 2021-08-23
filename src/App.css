@@ -1,6 +1,25 @@
 .App{
   height: 100vh;
+
 }
 .list{
   height: 100vh;
+    background-color: rgba(0,0,0,0.7);
+  }
+
+.list-info{
+  height: 100vh;
+
+}
+::-webkit-scrollbar{
+  width: 15px;
+}
+::-webkit-scrollbar-track{
+  background: black !important; 
+}
+::-webkit-scrollbar-thumb {
+  background: #fff !important; 
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #555 !important; 
 }

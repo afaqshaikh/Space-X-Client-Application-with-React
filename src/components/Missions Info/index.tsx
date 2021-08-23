@@ -16,11 +16,10 @@ const MissionInfo = ({ id }: OwnProps) => {
     }, [refetch, id]);
 
     if (loading)
-        return <h2>Loading</h2>
+        return <h2 className="text-white">Loading.... </h2>
 
     if (error || !data)
         return <h1>Error</h1>
-    console.log(data);
     return (
             <MissionsDetails data={data} />
     )
