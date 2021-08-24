@@ -1,5 +1,6 @@
 import { LaunchInfoQuery } from './../../generated/graphql'
 import './index.css'
+import Header from './../Header'
 interface Props {
     data: LaunchInfoQuery
 }
@@ -11,9 +12,9 @@ const MissionsDetails: React.FC<Props> = ({ data }) => {
     }
     const { flight_number, launch_success, mission_name, rocket, launch_site, launch_year, details, links } = data.launch
     return (
-        <div className="container mt-5">
-
-            <div className="row">
+        <div className="container">
+            <Header/>
+            <div className="row mt-3 ">
                 
                 <p className="text-white">Flight {flight_number} : {launch_success ? <span className="text-success fs-5 fw-bold">Success</span>
                     : <span className="text-danger fs-5 fw-bold">Failed</span>} </p>
